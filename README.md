@@ -54,7 +54,6 @@ will be OK, so:
 
 ```python
 >>> from pipe import *
-
 ```
 
 The basic syntax is to use a Pipe like in a shell:
@@ -62,7 +61,6 @@ The basic syntax is to use a Pipe like in a shell:
 ```python
 >>> sum(range(100) | select(lambda x: x ** 2) | where(lambda x: x < 100))
 285
-
 ```
 
 Some pipes take an argument, some do not need one:
@@ -73,7 +71,6 @@ Some pipes take an argument, some do not need one:
 
 >>> sum([1, [2, 3], 4] | traverse)
 10
-
 ```
 
 A Pipe as a function is nothing more than a function returning
